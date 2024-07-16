@@ -1,43 +1,62 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import LargeSegmentDouble from '../components/LargeSegmentDouble.astro';
-import Alert from '../components/Alert.astro';
-import LargeSegment from '../components/LargeSegment.astro';
-import Carousel from '../components/Carousel.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import LargeSegmentDouble from "../components/LargeSegmentDouble.astro";
+import Alert from "../components/Alert.astro";
+import LargeSegment from "../components/LargeSegment.astro";
+import Carousel from "../components/Carousel.astro";
+import projectsData from "../data/projectsData";
+import NewsCard from "../components/NewsCard.astro";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<div class="my-4 leading-tight text-gray-800 flex">
 			<div class="block w-1/3">
-				<h1 class="h-1/4">Bienvenido a <span class="text-gradient">YSM</span></h1>
+				<h1 class="h-1/4">
+					Bienvenido a <span class="text-gradient">YSM</span>
+				</h1>
 				<p class="h-3/4 font-semibold text-lg mr-10">
-					¡Bienvenido a nuestra página web para desarrolladores! Aquí encontrarás una amplia variedad de recursos útiles,
-				desde tutoriales y guías hasta herramientas y bibliotecas de código, para ayudarte en tu trabajo de desarrollo de software.
-				Además, ofrecemos una comunidad activa de desarrolladores y un equipo de expertos siempre dispuesto a ayudarte en cualquier pregunta o problema que puedas tener.
-				Explora nuestro sitio web para descubrir todo lo que podemos ofrecerte y llevar tus habilidades de desarrollo de software al siguiente nivel.
+					¡Bienvenido a nuestra página web para desarrolladores! Aquí
+					encontrarás una amplia variedad de recursos útiles, desde
+					tutoriales y guías hasta herramientas y bibliotecas de
+					código, para ayudarte en tu trabajo de desarrollo de
+					software. Además, ofrecemos una comunidad activa de
+					desarrolladores y un equipo de expertos siempre dispuesto a
+					ayudarte en cualquier pregunta o problema que puedas tener.
+					Explora nuestro sitio web para descubrir todo lo que podemos
+					ofrecerte y llevar tus habilidades de desarrollo de software
+					al siguiente nivel.
 				</p>
 			</div>
 			<div class="w-2/3">
-				<Carousel/>
+				<Carousel />
 			</div>
 		</div>
-		<Alert/>
-		<LargeSegment/>
-		<LargeSegmentDouble/>
-		<div class="instructions flex">
-			<h5 class="h-1/3 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Novedades</h5>
-			<div class="h-2/3 flex">
-				<p class="w-1/2">
-					To get started, open the directory <code>src/pages</code> in your project.<br />
-					<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-				</p>
-				<div class="w-1/2">
-					To get started, open the directory <code>src/pages</code> in your project.<br />
-					<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-				</div>
-			</div>
+		<Alert
+			title="Info"
+			header="Nueva sección agregada!"
+			info='Se ha agregado la sección "Novedades", la cual otorgará información de las nuevas integraciones de la página.'
+		/>
+		<LargeSegment />
+		<LargeSegmentDouble />
+		<div
+			class="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+		>
+			Novedades
+		</div>
+		<div
+			class="justify-between my-4 h-80 leading-normal grid grid-cols-4 grid-rows-1 gap-2"
+		>
+			{
+				projectsData.map((item) => (
+					<NewsCard
+						img="https://via.placeholder.com/640x480"
+						section="PROYECTOS"
+
+					/>
+				))
+			}
 		</div>
 		<ul role="list" class="link-card-grid">
 			<Card
