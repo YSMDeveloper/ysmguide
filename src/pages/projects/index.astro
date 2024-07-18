@@ -5,8 +5,8 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Proyectos">
     <main>
         <div class="content">
-            <div class="flex text-5xl items-center justify-center h-1/6">YSMGuide</div>
-            <div class="h-5/6 p-5">
+            <div class="flex text-5xl items-center justify-center h-32 font-bold">YSMGuide</div>
+            <div class="p-5">
                 <div
                     class="h-full flex bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w dark:border-gray-700 dark:bg-gray-800 p-5"
                 >
@@ -15,45 +15,61 @@ import Layout from "../../layouts/Layout.astro";
                         src="https://via.placeholder.com/640x480"
                         alt="Card Image"
                     />
-                    <div class="h-full w-full justify-start p-5">
-                        <div class="h-8 flex">
-                            <div>
-                                <Icon
-                                    name="simple-icons:javascript"
-                                    class="h-16 w-16 mx-4 hover:text-amber-400"
-                                />
-                            </div>
-                            <div>
-                                <Icon
-                                    name="simple-icons:astro"
-                                    class="h-16 w-16 mx-4 hover:text-orange-500"
-                                />
-                            </div>
-                            <div>
-                                <Icon
-                                    name="simple-icons:typescript"
-                                    class="h-16 w-16 mx-4 hover:text-blue-500"
-                                />
-                            </div>
-                            <div>
-                                <Icon
-                                    name="simple-icons:tailwindcss"
-                                    class="h-16 w-16 mx-4 hover:text-blue-400"
-                                />
-                            </div>
-                            <div>
-                                <Icon
-                                    name="simple-icons:iconify"
-                                    class="h-16 w-16 mx-4 hover:text-blue-500"
-                                />
-                            </div>
-                            <div>
-                                <Icon
-                                    name="simple-icons:github"
-                                    class="h-16 w-16 mx-4 hover:text-white"
-                                />
+                    <div class="flex flex-col w-full justify-between p-5">
+                        <div class="w-full flex-grow flex flex-col">
+                            <header class="text-6xl">
+                                Título
+                            </header>
+                            <div class="text-2xl">
+                                Subtítulo
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="flex justify-end items-end mt-auto pr-5">
+                    
+                </div>
+            </div>
+            <div class="w-full">
+                <header class="text-4xl font-bold text-center p-3">
+                    Tecnologías usadas
+                </header>
+                <div class="h-full w-full p-5 flex items-center justify-center">
+                    <div>
+                        <Icon
+                            name="simple-icons:javascript"
+                            class="h-12 w-12 mx-4 hover:text-amber-400"
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            name="simple-icons:astro"
+                            class="h-12 w-12 mx-4 hover:text-orange-500"
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            name="simple-icons:typescript"
+                            class="h-12 w-12 mx-4 hover:text-blue-500"
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            name="simple-icons:tailwindcss"
+                            class="h-12 w-12 mx-4 hover:text-blue-400"
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            name="simple-icons:iconify"
+                            class="h-12 w-12 mx-4 hover:text-blue-500"
+                        />
+                    </div>
+                    <div>
+                        <Icon
+                            name="simple-icons:github"
+                            class="h-12 w-12 mx-4 hover:text-white"
+                        />
                     </div>
                 </div>
             </div>

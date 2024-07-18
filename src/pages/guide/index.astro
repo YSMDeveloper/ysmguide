@@ -47,35 +47,6 @@ import projectsData from "../../data/projectsData";
             </div>
         </div>
     </div>
-    <div class="h-32 flex w-full items-center justify-center">
-        <code
-            class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6"
-        >
-            <span class="flex gap-4">
-                <span class="shrink-0 text-gray-500"> $ </span>
-
-                <span class="flex-1">
-                    <span> composer require </span>
-
-                    <span class="text-yellow-500"> laravel/dusk </span>
-                </span>
-            </span>
-
-            <svg
-                class="shrink-0 h-5 w-5 transition text-gray-500 group-hover:text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-            >
-                <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
-                <path
-                    d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"
-                >
-                </path>
-            </svg>
-        </code>
-    </div>
     <div class="h-[45rem] my-5">
         <div class="flex h-full">
             <div
@@ -128,22 +99,129 @@ import projectsData from "../../data/projectsData";
             </div>
         </div>
     </div>
+    <section>
+        <div class="flex text-5xl items-center justify-center h-20 w-full">
+            Proceso de instalación de entorno
+        </div>
+        <div class="max-w-xl mx-auto dark:bg-gray-100 dark:text-gray-800">
+            <ul class="space-y-12">
+                <li class="flex items-start space-x-3">
+                    <a
+                        rel="noopener noreferrer"
+                        href="#"
+                        class="flex items-center h-8 text-sm hover:underline"
+                        >v3.2.0</a
+                    >
+                    <div class="flex-1 space-y-2">
+                        <div
+                            class="flex items-center justify-between space-x-4 dark:text-gray-600"
+                        >
+                            <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                class="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300"
+                            >
+                                <span
+                                    aria-hidden="true"
+                                    class="h-1.5 w-1.5 rounded-full dark:bg-violet-600"
+                                ></span>
+                                <span
+                                    class="group-hover:underline dark:text-gray-800"
+                                    >Feature</span
+                                >
+                            </a>
+                            <span class="text-xs whitespace-nowrap"
+                                >10h ago</span
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Tincidunt nunc ipsum tempor
+                                purus vitae id. Morbi in vestibulum nec varius.
+                                Et diam cursus quis sed purus nam. Scelerisque
+                                amet elit non sit ut tincidunt condimentum. Nisl
+                                ultrices eu venenatis diam.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <a
+                        rel="noopener noreferrer"
+                        href="#"
+                        class="flex items-center h-8 text-sm hover:underline"
+                        >v3.1.9</a
+                    >
+                    <div class="flex-1 space-y-2">
+                        <div
+                            class="flex items-center justify-between space-x-4 dark:text-gray-600"
+                        >
+                            <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                class="inline-flex items-center px-3 py-1 my-1 space-x-2 text-sm border rounded-full group dark:border-gray-300"
+                            >
+                                <span
+                                    aria-hidden="true"
+                                    class="h-1.5 w-1.5 rounded-full dark:bg-violet-600"
+                                ></span>
+                                <span
+                                    class="group-hover:underline dark:text-gray-800"
+                                    >Bugfix</span
+                                >
+                            </a>
+                            <span class="text-xs whitespace-nowrap"
+                                >2 weeks ago</span
+                            >
+                        </div>
+                        <div class="space-y-2">
+                            <p>
+                                Scelerisque amet elit non sit ut tincidunt
+                                condimentum. Nisi ultrices eu venenatis diam.
+                            </p>
+                            <p>
+                                Illum quaerat ab inventore, eveniet repudiandae
+                                saepe, iste sed molestias laborum atque, quos
+                                reprehenderit fugit cumo!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <div class="h-[38rem] w-full p-5 flex-col">
         <div class="flex text-5xl items-center justify-center h-20 w-full">
             Proyectos donde es integrado
         </div>
         <div class="">
-            <div class="w-full justify-between py-4 leading-normal h-full grid grid-cols-4 grid-rows-1 gap-5">
-                {projectsData.map((item) => (
-                            <div class="h-full flex flex-col justify-between bg-white rounded-lg overflow-hidden shadow-md">
-                                <img class="h-3/5 w-full object-cover" src="https://via.placeholder.com/640x480" alt="Card Image">
-                                <div class="h-2/5 p-4">
-                                    <div class="font-bold text-xl">Card Description</div>
-                                    <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <div
+                class="w-full justify-between py-4 leading-normal h-full grid grid-cols-4 grid-rows-1 gap-5"
+            >
+                {
+                    projectsData.map((item) => (
+                        <div class="h-full flex flex-col justify-between bg-white rounded-lg overflow-hidden shadow-md">
+                            <img
+                                class="h-3/5 w-full object-cover"
+                                src="https://via.placeholder.com/640x480"
+                                alt="Card Image"
+                            />
+                            <div class="h-2/5 p-4">
+                                <div class="font-bold text-xl">
+                                    Card Description
                                 </div>
+                                <p class="text-gray-700 text-base">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer posuere erat a
+                                    ante.
+                                </p>
                             </div>
-                ))}
-        </div>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     </div>
 </Layout>
